@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary Converter</title>
+  </head>
+  <body style="display: grid; place-content: center">
+    <h1 style="font-size: 55px">Masukkan Text / Angka</h1>
+    <form method="POST">
+      <label for="input_text" style="font-size: 20px"
+        >Enter Text / Angka:</label
+      >
+      <input
+        type="text"
+        id="input_text"
+        name="input_text"
+        style="width: 200px; height: 25px" />
+      <button
+        type="submit"
+        style="
+          color: white;
+          background-color: black;
+          border: none;
+          height: 30px;
+          border-radius: 5px;
+        ">
+        Convert
+      </button>
+    </form>
+
+    {% if binary_output %}
+    <h2>Hasil Biner:</h2>
+    <p>{{ binary_output }}</p>
+    {% endif %}
+  </body>
+</html>
